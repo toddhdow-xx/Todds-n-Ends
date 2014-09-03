@@ -1,0 +1,4 @@
+Windows command line tricks:
+
+Current RDP sessions:
+qwinsta /server:computer01
