@@ -39,3 +39,41 @@ Enter the passphrase/pre-shared key at "Password".
 Click the "Connect" button to activate the wireless network connection.
 
 Voila! Wireless networking!
+
+Install nmap:
+Follow install instructions on this page:
+https://scottlinux.com/2012/05/22/install-nmap-6-on-debian-or-ubuntu-linux/
+(copied here for reference)
+
+1. First install some needed packages:
+$ sudo apt-get install build-essential
+$ sudo apt-get install libssl-dev
+$ sudo apt-get install libpathfinder-openssl-1 (I couldn't get this line to work)
+$ sudo apt-get install liblinear-dev
+$ sudo apt-get install libpcap0.8-dev
+$ sudo apt-get install libpcre3-dev
+checkinstall (I couldn't get this line to work)
+
+2. Next, grab the latest nmap tarball from http://nmap.org/download.html:
+(check for the latest version at nmap.org/dist before proceeding)
+$ wget http://nmap.org/dist/nmap-6.47.tar.bz2
+
+3. Extract:
+$ tar xvf nmap-6.01.tar.bz2
+
+4. Change to the nmap directory we extracted:
+$ cd nmap-6.47/
+
+5. Configure:
+$ ./configure
+
+6.
+$ make
+
+7.
+$ sudo checkinstall (I couldn't get this line to work)
+
+8. Run nmap:
+nmap -V
+
+Voila!
