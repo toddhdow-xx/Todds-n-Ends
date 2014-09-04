@@ -1,0 +1,11 @@
+Key links:
+http://www.solid-run.com/wiki/Main_Page
+http://www.offensive-security.com/kali-linux-vmware-arm-image-download/
+http://tools.kali.org/
+
+To flash an image:
+http://www.solid-run.com/wiki/Flash_an_image#OS_X
+mount
+sudo diskutil unmountDisk /dev/disk1*
+sudo dd if=kali-1.0.9-cubox-i.img of=/dev/rdisk1 bs=4096
+(control+T to see progress of image creation)
